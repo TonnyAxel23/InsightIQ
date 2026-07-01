@@ -1,1 +1,299 @@
-<!DOCTYPE html><html><head><title>InsightIQ</title></head><body><h1>Welcome</h1></body></html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightIQ - Business Intelligence Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="brand-text">InsightIQ</span>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active"><a href="#dashboard"><i class="fas fa-th-large"></i><span>Dashboard</span></a></li>
+                <li><a href="#analytics"><i class="fas fa-chart-bar"></i><span>Analytics</span></a></li>
+                <li><a href="#sales"><i class="fas fa-dollar-sign"></i><span>Sales</span></a></li>
+                <li><a href="#customers"><i class="fas fa-users"></i><span>Customers</span></a></li>
+                <li><a href="#products"><i class="fas fa-box"></i><span>Products</span></a></li>
+                <li><a href="#inventory"><i class="fas fa-warehouse"></i><span>Inventory</span></a></li>
+                <li><a href="#employees"><i class="fas fa-user-tie"></i><span>Employees</span></a></li>
+                <li><a href="#finance"><i class="fas fa-coins"></i><span>Finance</span></a></li>
+                <li><a href="#reports"><i class="fas fa-file-alt"></i><span>Reports</span></a></li>
+                <li><a href="#settings"><i class="fas fa-cog"></i><span>Settings</span></a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="#profile"><i class="fas fa-user-circle"></i><span>Profile</span></a>
+            <a href="#logout"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="nav-left">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Dashboard</h1>
+                <div class="breadcrumbs">
+                    <span>Home</span>
+                    <span>/</span>
+                    <span>Dashboard</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search..." id="globalSearch">
+                </div>
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=2563EB&color=fff" alt="User">
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <section class="content">
+            <!-- KPI Cards -->
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-icon revenue">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <h3>Revenue</h3>
+                        <p class="kpi-value">$847,293</p>
+                        <span class="kpi-change positive">
+                            <i class="fas fa-arrow-up"></i> 12.5%
+                        </span>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon expenses">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <h3>Expenses</h3>
+                        <p class="kpi-value">$329,847</p>
+                        <span class="kpi-change negative">
+                            <i class="fas fa-arrow-down"></i> 8.2%
+                        </span>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon profit">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <h3>Net Profit</h3>
+                        <p class="kpi-value">$517,446</p>
+                        <span class="kpi-change positive">
+                            <i class="fas fa-arrow-up"></i> 18.7%
+                        </span>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon sales">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <h3>Sales</h3>
+                        <p class="kpi-value">2,847</p>
+                        <span class="kpi-change positive">
+                            <i class="fas fa-arrow-up"></i> 5.3%
+                        </span>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon visitors">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <h3>Visitors</h3>
+                        <p class="kpi-value">45,238</p>
+                        <span class="kpi-change positive">
+                            <i class="fas fa-arrow-up"></i> 22.1%
+                        </span>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon satisfaction">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <h3>CSAT Score</h3>
+                        <p class="kpi-value">94.7%</p>
+                        <span class="kpi-change positive">
+                            <i class="fas fa-arrow-up"></i> 2.3%
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Row -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Revenue Overview</h3>
+                        <div class="chart-controls">
+                            <button class="btn-filter active">Week</button>
+                            <button class="btn-filter">Month</button>
+                            <button class="btn-filter">Year</button>
+                        </div>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Sales Distribution</h3>
+                        <div class="chart-controls">
+                            <button class="btn-filter active">Product</button>
+                            <button class="btn-filter">Region</button>
+                        </div>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tables Row -->
+            <div class="tables-grid">
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3>Recent Orders</h3>
+                        <div class="table-actions">
+                            <input type="text" placeholder="Search orders..." class="table-search">
+                            <button class="btn-primary"><i class="fas fa-plus"></i> New</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#ORD-001</td>
+                                    <td>Sarah Johnson</td>
+                                    <td>Premium Plan</td>
+                                    <td>$299.00</td>
+                                    <td><span class="status-badge success">Completed</span></td>
+                                    <td>2024-01-15</td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD-002</td>
+                                    <td>Michael Chen</td>
+                                    <td>Business Suite</td>
+                                    <td>$599.00</td>
+                                    <td><span class="status-badge warning">Pending</span></td>
+                                    <td>2024-01-15</td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD-003</td>
+                                    <td>Emily Davis</td>
+                                    <td>Starter Kit</td>
+                                    <td>$149.00</td>
+                                    <td><span class="status-badge success">Completed</span></td>
+                                    <td>2024-01-14</td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD-004</td>
+                                    <td>James Wilson</td>
+                                    <td>Pro Package</td>
+                                    <td>$399.00</td>
+                                    <td><span class="status-badge danger">Cancelled</span></td>
+                                    <td>2024-01-14</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-footer">
+                        <span>Showing 4 of 247 orders</span>
+                        <div class="pagination">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3>Top Products</h3>
+                        <div class="table-actions">
+                            <button class="btn-primary"><i class="fas fa-file-export"></i> Export</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Revenue</th>
+                                    <th>Units</th>
+                                    <th>Growth</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Enterprise Cloud</td>
+                                    <td>SaaS</td>
+                                    <td>$284,500</td>
+                                    <td>1,284</td>
+                                    <td><span class="growth positive">+24%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Analytics Pro</td>
+                                    <td>Analytics</td>
+                                    <td>$193,200</td>
+                                    <td>847</td>
+                                    <td><span class="growth positive">+18%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Security Suite</td>
+                                    <td>Security</td>
+                                    <td>$142,800</td>
+                                    <td>623</td>
+                                    <td><span class="growth negative">-3%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
